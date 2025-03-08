@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('image/bg-question.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.container .text {
+    padding-bottom: 50px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.container p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.container-child {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(210, 215, 211, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.carousel-item {
+    padding: 10px;
+    text-align: center;
+}
+
+.question-image {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.radio-label img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.radio-label:hover img {
+    transform: scale(1.05);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .radio-label img {
+    border: 3px solid #0d6efd;
+    box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+}
+
+.container-child .btnB button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    background-color: indianred;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s, text-decoration 0.3s, transform 0.3s;
+
+}
+
+.btnB button:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnB button:hover {
+    text-decoration: underline;
+}
+
+.carousel-control-prev {
+    left: -40px !important; /* Geser ke kiri */
+}
+
+.carousel-control-next {
+    right: -40px !important; /* Geser ke kanan */
+}
